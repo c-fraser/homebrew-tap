@@ -1,2 +1,4 @@
 # homebrew-tap
-Homebrew Formulae for @c-fraser
+
+[Homebrew Formulae](https://brew.sh/) for applications created 
+by [c-fraser](https://github.com/c-fraser). 
