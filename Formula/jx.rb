@@ -5,23 +5,23 @@
 class Jx < Formula
   desc "Easily install, upgrade, and run JVM applications"
   homepage "https://github.com/c-fraser/jx"
-  version "0.2.2"
+  version "0.2.3"
   license "Apache-2.0"
 
   depends_on "openjdk" => :optional
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/c-fraser/jx/releases/download/v0.2.2/jx_0.2.2_Darwin_arm64.tar.gz"
-      sha256 "ca9101d51c2847230218f3462ee96a4b677b965eddfc8c6bcd2e7c95fa3367c4"
+      url "https://github.com/c-fraser/jx/releases/download/v0.2.3/jx_0.2.3_Darwin_arm64.tar.gz"
+      sha256 "30a4285fe65d53020b786b8149c5ffe5076a26e0d10f3d3e3a859c5c86276e8b"
 
       def install
         bin.install "jx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/c-fraser/jx/releases/download/v0.2.2/jx_0.2.2_Darwin_x86_64.tar.gz"
-      sha256 "84c13862eef4e01286991ea9ea43a2406bb90026db844d8bd41b4661aafd1399"
+      url "https://github.com/c-fraser/jx/releases/download/v0.2.3/jx_0.2.3_Darwin_x86_64.tar.gz"
+      sha256 "56129de66e6643db2fb06a7c17997d1536d5fd2ba349e32814674ea12cbb4c42"
 
       def install
         bin.install "jx"
@@ -31,16 +31,16 @@ class Jx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/c-fraser/jx/releases/download/v0.2.2/jx_0.2.2_Linux_arm64.tar.gz"
-      sha256 "50d2c121f17e2f7f4d3917b8e5f4b6e41dd55daa59655b007ebf37f564916338"
+      url "https://github.com/c-fraser/jx/releases/download/v0.2.3/jx_0.2.3_Linux_arm64.tar.gz"
+      sha256 "789b64930bca92bfdc8d77473b5deeb8b7453bad6147d627539206fe3915437b"
 
       def install
         bin.install "jx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/c-fraser/jx/releases/download/v0.2.2/jx_0.2.2_Linux_x86_64.tar.gz"
-      sha256 "8b05384ffe91e1ee590ffcf2c17901864a141cff9bd278fe6329e41dda77e176"
+      url "https://github.com/c-fraser/jx/releases/download/v0.2.3/jx_0.2.3_Linux_x86_64.tar.gz"
+      sha256 "cc9ea2449de4dfaf35c5a4012550736f12b11622c029ec8890e991ad8f808f1e"
 
       def install
         bin.install "jx"
